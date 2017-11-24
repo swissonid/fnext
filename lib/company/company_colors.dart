@@ -33,5 +33,6 @@ class CompanyColors {
 
 final ThemeData companyTheme = new ThemeData(
   primaryColor: CompanyColors.red,
-  primarySwatch: CompanyColors.red
+  buttonColor: const Color(0xFFeb0000),
+  accentColor: const Color(0xFFeb0000),
 );

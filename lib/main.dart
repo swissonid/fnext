@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:fnext/company_colors.dart';
+import 'package:fnext/company/company_colors.dart';
+import 'package:fnext/company/company_icons.dart';
 
 void main() {
   runApp(new MyApp());
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
     return new MaterialApp(
       title: 'fNext',
       theme: companyTheme,
-      home: new MyHomePage(title: 'Flutter Demo Home Page'),
+      home: new MyHomePage(title: 'Flutter Mobile'),
     );
   }
 }
@@ -58,10 +59,18 @@ class _MyHomePageState extends State<MyHomePage> {
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
     return new Scaffold(
+
       appBar: new AppBar(
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
         title: new Text(widget.title),
+        centerTitle: true,
+        actions: [
+          new IconButton(
+            icon: new Icon(CompanyIcons.icon_aendere_reihenfolge)
+            , onPressed: (){}
+            ),
+        ]
       ),
       body: new Center(
         // Center is a layout widget. It takes a single child and positions it
@@ -92,10 +101,13 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
+      drawer: new Drawer(
+        child: new DrawerHeader(child: null),
+      ),
       floatingActionButton: new FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
-        child: new Icon(Icons.add),
+        child: new Icon(CompanyIcons.icon_plus),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
