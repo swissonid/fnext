@@ -1,3 +1,6 @@
+
+master: [![Build Status](https://travis-ci.org/swissonid/fnext.svg?branch=master)](https://travis-ci.org/boennemann/badges)
+development: [![Build Status](https://travis-ci.org/swissonid/fnext.svg?branch=development)](https://travis-ci.org/boennemann/badges)
 # fnext
 
 A new Flutter project.

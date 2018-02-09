@@ -59,3 +59,9 @@ flutter:
     - family: companyicons
       fonts:
         - asset: fonts/companyicons.ttf
+    - family: light
+      fonts:
+        - asset: fonts/HelveticaNeueLTStd-Lt.otf
+    - family: bold
+      fonts:
+        - asset: fonts/HelveticaNeueLTStd-BdCn.otf
